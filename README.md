@@ -1,4 +1,5 @@
 # T-FLIPFLOP-POSEDGE
+# T-FLIPFLOP-POSEDGE
 
 **AIM:**
 
@@ -28,7 +29,6 @@ From the above characteristic table, we can directly write the next state equati
 
 **Procedure**
 
-/* write all the steps invloved */+
 1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
 
 2.Declare Inputs and Outputs: Declare input and output ports for the module.
@@ -45,7 +45,12 @@ From the above characteristic table, we can directly write the next state equati
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:Reshma R RegisterNumber:24900406
+```
+ Program for flipflops and verify its truth table in quartus using Verilog programming.
+Developed by:Reshma R
+RegisterNumber:24900406
+```
+```
 module T( input clk, rst_n, input t,
 output reg q,
 output q_bar
@@ -62,15 +67,15 @@ q<=q;
 end
 assign q_bar = ~q;
 endmodule
-*/
+```
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2024-12-19 230128](https://github.com/user-attachments/assets/c18d970c-bd6f-4dbc-bc90-586ca40b764f)
-
+![T-RTL](https://github.com/user-attachments/assets/f927099b-fd39-4f2a-8ad3-c60a3b7fd9ed)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot 2024-12-19 230151](https://github.com/user-attachments/assets/f2a6d5c4-c736-4e98-9e22-a29e6dd7b776)
+![T-Waveform](https://github.com/user-attachments/assets/74bf633e-61a9-4eee-8672-529e89f62eb5)
 
 
 **RESULTS**
+
 Hence, T flipflop using verilog and validating their functionality using their functional tables is implemented.
